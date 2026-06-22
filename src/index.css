@@ -35,6 +35,16 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .hero-text-container {
+    min-height: unset !important;
+    padding-bottom: 3rem !important;
+  }
+  .hero-headline {
+    font-size: 2.25rem !important;
+  }
+}
+
 ::selection {
   background: rgba(99, 102, 241, 0.2);
   color: #fff;

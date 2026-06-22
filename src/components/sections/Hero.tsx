@@ -102,7 +102,7 @@ export function Hero() {
 
       {/* ── Text content ── */}
       <div
-        className="relative z-10"
+        className="hero-text-container relative z-10"
         style={{
           minHeight: '100svh',
           display: 'flex',
@@ -133,7 +133,7 @@ export function Hero() {
             {/* Headline */}
             <motion.h1
               {...fadeUp(0.08)}
-              className="font-display font-bold text-white leading-[1.05] tracking-tight mb-7"
+              className="hero-headline font-display font-bold text-white leading-[1.05] tracking-tight mb-7"
               style={{ fontSize: 'clamp(2.75rem, 5vw, 4.75rem)' }}
             >
               Building the future,
@@ -172,13 +172,13 @@ export function Hero() {
       {/* ── Mobile photo ── */}
       <div
         className="lg:hidden relative"
-        style={{ height: '55vw', maxHeight: '380px', marginTop: '-40px' }}
+        style={{ height: '80vw', maxHeight: '520px', marginTop: '64px' }}
       >
         <img
           src="/Meg.png"
           alt="Meagan Holub"
           className="w-full h-full object-cover"
-          style={{ objectPosition: '50% 20%' }}
+          style={{ objectPosition: '50% 15%' }}
           draggable={false}
         />
         <div
@@ -191,7 +191,7 @@ export function Hero() {
         <div
           className="absolute inset-x-0 bottom-0"
           style={{
-            height: '120px',
+            height: '140px',
             background: 'linear-gradient(to top, #050508 0%, transparent 100%)',
           }}
         />
