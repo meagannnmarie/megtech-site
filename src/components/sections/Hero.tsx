@@ -17,6 +17,7 @@ function ConsultButton() {
   return (
     <a
       href="mailto:hello@meaganholub.com?subject=Consultation Request"
+      className="hero-consult-btn"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -160,8 +161,10 @@ export function Hero() {
             </motion.p>
 
             {/* CTAs */}
-            <motion.div {...fadeUp(0.24)} className="flex flex-wrap gap-4 items-center">
-              <PrimaryButton href="#contact">Start Your Project</PrimaryButton>
+            <motion.div {...fadeUp(0.24)} className="hero-cta-wrapper flex flex-wrap gap-4 items-center">
+              <div className="hero-primary-wrapper">
+                <PrimaryButton href="#contact">Start Your Project</PrimaryButton>
+              </div>
               <ConsultButton />
             </motion.div>
 
@@ -172,7 +175,7 @@ export function Hero() {
       {/* ── Mobile photo ── */}
       <div
         className="lg:hidden relative"
-        style={{ height: '80vw', maxHeight: '520px', marginTop: '64px' }}
+        style={{ height: '80vw', maxHeight: '520px', marginTop: '44px' }}
       >
         <img
           src="/Meg.png"
